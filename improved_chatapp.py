@@ -26,7 +26,7 @@ with st.sidebar:
     st.markdown("[OpenAI LLM](https://platform.openai.com/docs/models)")
     st.write("Made by [Sampik Kumar Gupta](https://www.linkedin.com/in/sampik-gupta-41544bb7/)")
 
-load_dotenv()
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 
 def main():
     st.header("Ask any questions from your PDF by uploading it Here")
